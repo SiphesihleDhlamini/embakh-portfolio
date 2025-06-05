@@ -11,15 +11,15 @@ export default function PortfolioSection() {
 
   const projects = [
     {
-      title: "Blue Portfolio",
-      description: "My first ever portfolio that I created and hosted online when I was still a freelancer.",
+      title: "DMN Fuel",
+      description: "A diesel supply company website with modern design and service showcase features.",
       tags: ["HTML", "CSS", "JavaScript"],
       gradient: "from-blue-400 to-purple-500",
       color: "primary",
-      link: "https://github.com/SiphesihleDhlamini/blueportfolio"
+      link: "https://dmn-fuel.vercel.app/"
     },
     {
-      title: "PMB Security Website",
+      title: "PMB Security",
       description: "Professional security services website with modern design and service showcase features.",
       tags: ["React", "CSS", "Responsive"],
       gradient: "from-green-400 to-blue-500",
