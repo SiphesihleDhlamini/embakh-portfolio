@@ -12,6 +12,7 @@ import {
   Twitter,
   Github,
   Dribbble,
+  Facebook,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -64,7 +65,7 @@ export default function ContactSection() {
        // Create email content
        const subject = `New Project Inquiry from ${data.name}`;
        const body = `
- Hi Embak Solutions Team,
+ Hi Embakh Solutions Team,
 
  I'm interested in your services and would like to discuss a potential project.
 
@@ -82,7 +83,7 @@ export default function ContactSection() {
      `.trim();
 
      // Create mailto URL
-     const mailtoUrl = `mailto:hello@embaksolutions.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+     const mailtoUrl = `mailto:info@embakh.co.za?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
      // Open default email client
      window.open(mailtoUrl, "_self");
@@ -116,9 +117,8 @@ export default function ContactSection() {
 
   const socialLinks = [
     { icon: Linkedin, color: "primary", href: "#" },
-    { icon: Twitter, color: "accent", href: "#" },
+    { icon: Facebook, color: "accent", href: "#" },
     { icon: Github, color: "primary", href: "#" },
-    { icon: Dribbble, color: "pink", href: "#" },
   ];
 
   return (
@@ -177,9 +177,9 @@ export default function ContactSection() {
 
             <div className="mt-8">
               <h4 className="text-lg font-semibold text-[#0F172A] mb-4">
-                Follow Us
+                Socials Coming soon
               </h4>
-              <div className="flex space-x-4">
+              { <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <button
                     key={index}
@@ -196,7 +196,7 @@ export default function ContactSection() {
                     <social.icon className="h-4 w-4" />
                   </button>
                 ))}
-              </div>
+              </div> }
             </div>
           </motion.div>
 

@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Github, Dribbble } from "lucide-react";
+import { Linkedin, Twitter, Github, Dribbble, Facebook } from "lucide-react";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -24,9 +24,8 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Linkedin, href: "#" },
-    { icon: Twitter, href: "#" },
+    { icon: Facebook, href: "#" },
     { icon: Github, href: "#" },
-    { icon: Dribbble, href: "#" },
   ];
 
   return (
@@ -35,7 +34,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="text-2xl font-bold mb-4">
-              Embak<span className="text-accent">.</span>
+              Embakh<span className="text-accent">.</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Helping businesses embark on their digital transformation journey

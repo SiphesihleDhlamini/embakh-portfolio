@@ -10,13 +10,13 @@ export default function PortfolioSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const projects = [
-    {
+     {
       title: "DMN Fuel",
       description: "A diesel supply company website with modern design and service showcase features.",
       tags: ["HTML", "CSS", "JavaScript"],
       gradient: "from-blue-400 to-purple-500",
       color: "primary",
-      link: "https://dmn-fuel.vercel.app/"
+      link: "https://dmnfuel.co.za/"
     },
     {
       title: "PMB Security",
@@ -24,7 +24,7 @@ export default function PortfolioSection() {
       tags: ["React", "CSS", "Responsive"],
       gradient: "from-green-400 to-blue-500",
       color: "accent",
-      link: "https://github.com/SiphesihleDhlamini/pmb-security"
+      link: "https://pmbsecurities.co.za/"
     },
     {
       title: "Tag Along E-Hailing App",
